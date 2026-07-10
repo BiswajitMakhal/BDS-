@@ -573,7 +573,7 @@ nav {
 }
 
 .payment-content h2 span {
-    background: var(--gold-gradient);
+    background: var(--primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
