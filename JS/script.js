@@ -20,6 +20,25 @@ document.querySelectorAll('.nav-item').forEach(item => {
     });
 });
 
+// ================== COPY UPI ID LOGIC ==================
+const copyBtn = document.getElementById('copy-btn');
+const upiId = document.getElementById('upi-id');
+
+if (copyBtn && upiId) {
+    copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(upiId.innerText).then(() => {
+            // Icon change to checkmark
+            copyBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+            copyBtn.classList.add('copied');
+            
+            // Revert back after 2 seconds
+            setTimeout(() => {
+                copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+                copyBtn.classList.remove('copied');
+            }, 2000);
+        });
+    });
+}
 // ================== PRELOADER LOGIC ==================
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
