@@ -988,8 +988,8 @@ footer {
         padding: 0.8rem 1rem;
         width: 90%;
         text-align: center;
-        left: 50%;
-        animation: none;
+        left: 5%;
+        /* animation: none; */
     }
 
     .floating-star-badge .stars i {
