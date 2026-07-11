@@ -389,8 +389,8 @@ nav {
 
 .review-glass-card {
     background-color: var(--bg-card);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    /* backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); */
     border: 1px solid var(--border);
     border-radius: 32px;
     padding: 3rem;
@@ -531,8 +531,8 @@ nav {
 /* Glassmorphism Card */
 .payment-glass-card {
     background-color: var(--bg-card);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    /* backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); */
     border: 1px solid var(--border);
     border-radius: 32px;
     padding: 4rem;
