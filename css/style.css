@@ -105,6 +105,33 @@ body.loading {
     }
 }
 
+/* ================== TOP ANNOUNCEMENT BAR ================== */
+.announcement-bar {
+    background: var(--gold-gradient, linear-gradient(135deg, #fcd34d 0%, #d97706 100%));
+    color: #000000;
+    text-align: center;
+    padding: 10px 4%;
+    position: relative;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.announcement-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.announcement-content i {
+    font-size: 0.85rem;
+}
+
 /* ================== NAVBAR ================== */
 nav {
     display: flex;
@@ -113,7 +140,7 @@ nav {
     padding: 1.2rem 6%;
     background-color: var(--nav-bg);
     backdrop-filter: blur(12px);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -793,6 +820,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Announcement bar */
+    .announcement-content {
+        font-size: 0.85rem;
+        gap: 6px;
+    }
+    /* Navbar */
     .hamburger {
         display: flex;
     }
@@ -925,6 +958,18 @@ footer {
 }
 
 @media (max-width: 576px) {
+    /* Announcement bar */
+    .announcement-bar {
+        padding: 8px 3%;
+    }
+    .announcement-content {
+        font-size: 0.8rem;
+        letter-spacing: 0;
+    }
+    .announcement-content i {
+        display: none; 
+    }
+    /* Navbar */
     .logo {
         font-size: 1.4rem;
     }
