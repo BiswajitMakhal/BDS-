@@ -128,9 +128,7 @@ body.loading {
     letter-spacing: 0.5px;
 }
 
-.announcement-content i {
-    font-size: 0.85rem;
-}
+
 
 /* ================== NAVBAR ================== */
 nav {
@@ -292,7 +290,7 @@ nav {
 
 /* ================== FLEX LAYOUT SECTIONS ================== */
 .main-container {
-    padding: 6rem 6%;
+    padding: 3rem 6%;
 }
 
 .section-header {
@@ -315,7 +313,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
-    justify-content: center;
 }
 
 .menu-block {
@@ -390,7 +387,7 @@ nav {
 /* ================== REVIEW SECTION ================== */
 .review-wrapper-section {
     background-color: var(--bg-base);
-    padding: 6rem 6%;
+    padding: 2rem 6%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -530,7 +527,7 @@ nav {
 
 /* ================== DIGITAL PAYMENT SECTION  ================== */
 .payment-wrapper-section {
-    padding: 6rem 6%;
+    padding: 3rem 6%;
     display: flex;
     justify-content: center;
     background-color: var(--bg-base);
@@ -732,7 +729,7 @@ nav {
 footer {
     background-color: #06090f;
     color: #94a3b8;
-    padding: 5rem 6% 2rem;
+    padding: 3rem 6% 2rem;
     border-top: 1px solid var(--border);
 }
 
@@ -820,11 +817,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     /* Announcement bar */
     .announcement-content {
         font-size: 0.85rem;
         gap: 6px;
     }
+
     /* Navbar */
     .hamburger {
         display: flex;
@@ -875,7 +874,7 @@ footer {
         flex-direction: column-reverse;
         min-height: auto;
         background: none;
-        padding: 100px 4% 40px 4%;
+        padding: 32px 4% 14px 4%;
         align-items: center;
     }
 
@@ -958,17 +957,18 @@ footer {
 }
 
 @media (max-width: 576px) {
+
     /* Announcement bar */
     .announcement-bar {
         padding: 8px 3%;
     }
+
     .announcement-content {
         font-size: 0.8rem;
         letter-spacing: 0;
     }
-    .announcement-content i {
-        display: none; 
-    }
+
+
     /* Navbar */
     .logo {
         font-size: 1.4rem;
@@ -978,12 +978,22 @@ footer {
         width: 100%;
     }
 
+    /* Hero section */
     .hero-title {
         font-size: 2.2rem;
     }
 
     .hero-desc {
         font-size: 1rem;
+    }
+
+    /* Menu section */
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .main-container {
+        padding-bottom: 2rem;
     }
 
     .section-header h2 {
@@ -1001,11 +1011,25 @@ footer {
         font-size: 0.9rem;
     }
 
+    /* Footer section */
+    footer {
+        padding: 1rem;
+    }
+
     .footer-brand {
         font-size: 1.6rem;
     }
 
+    .footer-inner {
+        margin-bottom: 2rem;
+    }
+
     /* REVIEW SECTION */
+    .review-wrapper-section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .review-glass-card {
         padding: 2.5rem 1.2rem;
         border-radius: 24px;
@@ -1042,6 +1066,11 @@ footer {
     }
 
     /* PAYMENT SECTION */
+    .payment-wrapper-section {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
     .payment-glass-card {
         padding: 2.5rem 1.2rem;
         border-radius: 24px;
