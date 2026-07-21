@@ -749,7 +749,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1rem;
+    font-size: 12px;
     max-width: 600px;
     color: #cbd5e1;
     line-height: 1.6;
