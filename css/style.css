@@ -289,13 +289,14 @@ nav {
 }
 
 .mobile-banner-holder {
+    max-width: 800px;
+    max-height: 800px;
     display: none;
-    width: 100%;
 }
 
 .mobile-banner-holder img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -724,6 +725,7 @@ nav {
 
 .app-icons img {
     height: 24px;
+    width: 24px;
     opacity: 0.8;
     filter: grayscale(100%) brightness(200%);
     transition: all 0.3s ease;
@@ -760,7 +762,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 12px;
+    font-size: 13px;
     max-width: 600px;
     color: #cbd5e1;
     line-height: 1.6;
@@ -775,7 +777,8 @@ footer {
     padding-top: 2rem;
     width: 100%;
     text-align: center;
-    color: #475569;
+    color: #dbdcdc;
+    /* color: #475569; */
     font-size: 0.9rem;
 }
 
@@ -1124,5 +1127,6 @@ footer {
 
     .app-icons img {
         height: 20px;
+        width: 20px;
     }
 }
