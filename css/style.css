@@ -128,7 +128,7 @@ body.loading {
     letter-spacing: 0.5px;
 }
 
-.ind {
+/* .holiday {
     background: linear-gradient(90deg,
             #ff9933 0%,
             #ffffff 45%,
@@ -138,7 +138,7 @@ body.loading {
     padding: 4px 10px;
     display: inline-block;
     margin-top: 5px;
-}
+} */
 
 
 /* ================== NAVBAR ================== */
