@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bds-store.netlify.app/sitemap.xml
