@@ -836,8 +836,9 @@ body {
     margin-bottom: 10px;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;   
 }
+
 
 .chip-scroll::-webkit-scrollbar {
     display: none;
@@ -845,7 +846,6 @@ body {
 
 .menu-tab {
     flex: 0 0 auto;
-    scroll-snap-align: start;
     padding: 11px 20px;
     border-radius: 999px;
     font-weight: 700;

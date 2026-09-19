@@ -258,11 +258,13 @@ tabs.forEach(function(tab){
       .getElementById(tab.dataset.tab)
       .classList.add('active');
 
-    tab.scrollIntoView({
-      behavior:'smooth',
-      inline:'center',
-      block:'nearest'
-    });
+   var scroller = document.getElementById('menuTabs');
+var target = tab.offsetLeft - (scroller.clientWidth - tab.offsetWidth) / 2;
+
+scroller.scrollTo({
+  left: target,
+  behavior: 'smooth'
+});
 
   });
 
